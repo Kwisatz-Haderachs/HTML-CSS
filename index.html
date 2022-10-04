@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Title</title>
 </head>
-<body>
-$END$
+<body id="base" class="tools">
+
+<header role="banner" id="sitemast">
+    <nav role="navigation" aria-label="page" id="skiplinks">
+        <a href="#main">Main content</a>
+    </nav>
+</header>
+
+    <form>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="pass">Password</label>
+        <input type="password">
+        <label for="github">GitHub Username </label>
+        <input type="username">
+        <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">Remember me</label>
+        <input type="submit" value="Login" onclick="lsRememberMe()">
+    </form>
+
 </body>
 </html>
